@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  background-color: #2b0000;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.initially-hidden {
+  display: none;
+}
+
+.fa {
+  float: right;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  width: 50%;
+  float: left;
+  text-align: right;
+  position: absolute;
+  top: 20%;
+  font-family: 'Cinzel', serif;
+  text-shadow: 2px 2px 5px #2b0000;
+}
+
+h1 + h1 {
+  position: absolute;
+  left: 55%;
+  text-align: left;
+  width: 40%;
+}
+
+#countdown, #timer {
+  text-align: center;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+#countdown {
+  position: absolute;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px #2b0000;
+  top: 90%;
+  font-size: 20px;
+  width: 100vw;
+}
+
+#timer {
+  position: absolute;
+  font-family: 'Noticia Text', serif;
+  top:73.5%;
+  color: black;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+/*NAV*/
+nav {
+  position: relative;
+  width: 100vw;
+  background-color: #2b0e0a;
+  z-index: 1;
+  top: -20px;
+  left: -10px;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 50px 0 -35px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+li {
+  text-align: left;
+  padding: 10px 0;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 421px){
+  h1{
+    font-size: 30px;
+  }
+
+  h1 + h1 {
+    position: absolute;
+    left: 60%;
+    text-align: left;
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-height: 900px){
+  #timer{
+    top: 80%;
+  }
+}
+@media only screen and (min-width : 321px) and (orientation : landscape){
+  body{
+    background-position: bottom;
+  }
+  #timer{
+    left: 20%;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #2b0000;
+  }
+  #countdown{
+    left: 80%;
+    top: 82%;
+    font-size: 1.6em;
+  }
+  a{
+    font-size: 45px;
+  }
+  .fa{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+}
